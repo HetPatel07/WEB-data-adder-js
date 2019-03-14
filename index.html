@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100"> 
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+</head>
+
+<body class="h-100">
+
+    <!-- Start your project here-->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row m-0 h-100 w-100 py-5">
+                <div class="col-12 ">
+                    <h2 class="text-center">REGISTRATION FROM</h2>
+                    <form action="" class="py-3">
+                        <p>Name :</p>
+                        <input type="text" placeholder="Enter ur Name" required id="name">
+
+                        <p class="mt-3">Email address :</p>
+                        <input type="email" placeholder="xyz@mail.com" required id="mail">
+
+                        <p class="mt-3">
+                            Password :
+                        </p>
+                        <input type="password" placeholder="*******" required id="pass">
+                        <button type="button" class="btn btn-light mt-3 submit-btn" onclick="sub()">Submit</button>
+                    </form>
+                </div>
+                <div class="col-12 mt-5">
+                    <table class="w-100">
+                        <tr id="tr">
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Password</th>
+                            <th>Update</th>
+                            <th>Delete</th>
+                        </tr>
+                        <!--
+<tr>
+    <td>het</td>
+    <td>xyz@.com</td>
+    <td>admin</td>
+    <td><button type="button" class="btn btn-light submit-btn" onclick="pop(this)">Update</button></td>
+    <td><button type="button" class="btn btn-light submit-btn">Delete</button></td>
+</tr>
+-->
+                    </table>
+                </div>
+                <div class="col-12 position-fixed main">
+                    <div class="form rounded">
+                        <div class="header">
+                            <p class="float-left">WELCOME</p>
+                            <span class="float-right" onclick="popdown()"><i class="fas fa-times"></i></span>
+                        </div>
+                        <div class="formMain">
+                            <form action="">
+                                <p>ENTER UR NAME:</p>
+                                <div class="w-100"></div>
+                                <input type="text" placeholder="Enter ur name" value="" class="rounded" id="name1">
+                                <p class="mt-3">ENTER UR MAIL:</p>
+                                <div class="w-100"></div>
+                                <input type="text" placeholder="@mail.com" class="rounded" id="mail1">
+                                <p class="mt-3">PASSOWRD :</p>
+                                <div class="w-100"></div>
+                                <input type="password" placeholder="******" class="rounded" id="pass1">
+                                <div class="mt-5 mx-auto rounded btni" onclick="msg()">
+                                    SUBMIT
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--                another pop up part-->
+                <div class="col-12 position-fixed main1" style="opacity: 1;">
+                    <div class="mainContent">
+                        <h3 class="mb-5">Are u sure u want to commit changes ?</h3>
+                        <div class="mainBtn d-flex">
+                            <div class="one w-50" onclick="sure()">
+                                <p class="mb-0 p-0">CONFIRM</p>
+                            </div>
+                            <div class="two w-50" onclick="close()">
+                                <p class="mb-0 p-0">CLOSE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-12 position-fixed main1" style="opacity: 1;">
+                    <div class="mainContent">
+                        <h3 class="mb-5">Are u sure u want to commit changes ?</h3>
+                        <div class="mainBtn d-flex">
+                            <div class="one w-50" onclick="sure()">
+                                <p class="mb-0 p-0">CONFIRM</p>
+                            </div>
+                            <div class="two w-50" onclick="close()">
+                                <p class="mb-0 p-0">CLOSE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- /Start your project here-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.js"></script>
+</body>
+
+</html>

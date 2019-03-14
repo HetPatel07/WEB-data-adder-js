@@ -1,0 +1,234 @@
+body {
+    font-family: 'Varela Round', sans-serif;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+form p {
+    font-size: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: lightgrey;
+    transition: .3s all;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+    transition: .3s all;
+}
+
+.submit-btn {
+    font-size: 18px;
+    background-color: grey !important;
+    color: #fff;
+}
+
+.submit-btn:hover {
+    font-size: 18px;
+    background-color: #2BBBAD !important;
+    color: #fff;
+}
+
+tr th {
+    border-top: 1px solid grey;
+    font-size: 16px;
+    font-weight: 700;
+    color: #777;
+    padding: 10px 0 10px 13px;
+}
+
+tr td {
+    font-size: 16px;
+    color: grey;
+    padding: 10px 0 10px 13px;
+}
+
+td > .submit-btn {
+    font-size: 16px;
+}
+
+td > .submit-btn:hover {
+    font-size: 16px;
+}
+
+/*dialoge*/
+.main {
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    width: 100%;
+    background-color: rgba(1, 1, 1, .7);
+}
+
+.main1 {
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(1, 1, 1, .7);
+}
+
+.form {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 35%;
+    transform: translateY(-50%);
+    margin: auto;
+    width: 500px;
+    opacity: 0;
+    background-color: #fff;
+    padding: 50px;
+}
+
+.header {
+    padding: 0 10px;
+    overflow: auto;
+    border-bottom: 1px solid #333;
+}
+
+.header > p,
+.header > span {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.header > span {
+    cursor: pointer;
+}
+
+form {
+    padding: 50px 0;
+}
+
+.formMain input,
+.btni {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid grey;
+    transition: .3s all;
+    display: inline-block;
+}
+
+.btni {
+    margin: auto;
+
+    padding: 10px 15px;
+    text-align: center;
+    background-color: grey;
+    cursor: pointer;
+    color: #fff;
+    display: inline-block;
+}
+
+.btni:hover {
+    background-color: #2BBBAD;
+    transition: .3s all;
+    color: #fff !important;
+    border-color: #2BBBAD;
+}
+
+
+/*another pop up*/
+
+.mainContent {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 400px;
+    text-align: center;
+    padding-top: 50px;
+    background-color: #fff;
+    display: inline-block;
+}
+
+.mainContent h3 {
+    padding: 0 13px;
+}
+
+.one,
+.two {
+    z-index: 1;
+    padding: 8px 0;
+    cursor: pointer;
+    background-color: #2BBBAD;
+    position: relative;
+}
+
+.one::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    background-color: #333;
+    opacity: .7;
+    transition: .3s all;
+}
+
+.one:hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #333;
+    opacity: .5;
+    transition: .3s all;
+}
+
+.two::after {
+    transition: .3s all;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    background-color: #fff;
+    opacity: .7;
+}
+
+.two:hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    opacity: .5;
+    transition: .3s all;
+}
+
+.two {
+    z-index: 1;
+    background-color: #333;
+    position: relative;
+    transition: .3s all;
+}
+
+.one p,.two p {
+    transition: .3s all;
+    z-index: 1;
+    color: #fff;
+    line-height: 40px;
+}
