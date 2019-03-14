@@ -58,6 +58,9 @@ function msg() {
     //        getbtn.parentNode.parentNode.childNodes[1].innerHTML = mail1;
     //        getbtn.parentNode.parentNode.childNodes[2].innerHTML = pass1;
 }
+var suc = document.getElementsByClassName('main2')[0];
+var isuc = document.getElementsByClassName('mainContent1')[0];
+
 
 function sure() {
     m.style.opacity = "0";
@@ -74,12 +77,32 @@ function sure() {
 
     var pass1 = document.getElementById('pass1').value;
     var getbtn = document.getElementById('submitbtn');
+    suc.style.opacity = "2";
+    suc.style.zIndex = "1";
+    suc.style.transition = ".3s all";
+    isuc.style.transition = ".3s all";
+    suc.style.height = "100%";
+    isuc.style.opacity = "2";
+    isuc.style.right = "0";
+    isuc.style.zIndex = "1";
+
     getbtn.parentNode.parentNode.childNodes[0].innerHTML = name1;
     getbtn.parentNode.parentNode.childNodes[1].innerHTML = mail1;
     getbtn.parentNode.parentNode.childNodes[2].innerHTML = pass1;
 }
 
-function close() {
+function succesclose() {
+    suc.style.opacity = "0";
+    suc.style.zIndex = "-2";
+    suc.style.transition = ".3s all";
+    isuc.style.transition = ".3s all";
+    suc.style.height = "0";
+    isuc.style.opacity = "0";
+    isuc.style.right = "50%";
+    isuc.style.zIndex = "-1";
+}
+
+function closei() {
     m.style.opacity = "0";
     m.style.zIndex = "-2";
     m.style.transition = ".3s all";

@@ -81,6 +81,15 @@ td > .submit-btn:hover {
     background-color: rgba(1, 1, 1, .7);
 }
 
+.main2 {
+    z-index: -1;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(1, 1, 1, .7);
+}
+
 .form {
     z-index: -1;
     position: absolute;
@@ -158,6 +167,17 @@ form {
     display: inline-block;
 }
 
+.mainContent1{
+    background-color: #fff;
+    display: inline-block;
+    padding: 80px 80px 80px 30px;
+    background-color: #2BBBAD;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 0;
+    right: -50%;
+    z-index: 1;
+}
 .mainContent h3 {
     padding: 0 13px;
 }
@@ -228,7 +248,8 @@ form {
     transition: .3s all;
 }
 
-.one p,.two p {
+.one p,
+.two p {
     transition: .3s all;
     z-index: 1;
     color: #fff;
