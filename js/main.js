@@ -19,7 +19,13 @@ function sub() {
     b[1].innerHTML = mail.value;
     b[2].innerHTML = pass.value;
     b[3].innerHTML = '<button type="button" class="btn btn-light submit-btn" onclick="pop(this)"id="submitbtn">Update</button>';
-    b[4].innerHTML = '<button type="button" class="btn btn-light submit-btn">Delete</button>';
+    b[4].innerHTML = '<button type="button" class="btn btn-light submit-btn"onclick="deletet(this)">Delete</button>';
+}
+
+function deletet(del) {
+    var delmain = del.parentNode.parentNode;
+    console.log(delmain);
+    delmain.innerHTML = "";
 }
 var a = document.getElementsByClassName('main')[0];
 var b = document.getElementsByClassName('form')[0];
