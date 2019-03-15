@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100"> 
+<html lang="en" class="h-100">
 
 <head>
     <meta charset="utf-8">
@@ -25,18 +25,19 @@
             <div class="row m-0 h-100 w-100 py-5">
                 <div class="col-12 ">
                     <h2 class="text-center">REGISTRATION FROM</h2>
-                    <form action="" class="py-3">
+                    <form action="" class="py-3" name="myForm">
                         <p>Name :</p>
-                        <input type="text" placeholder="Enter ur Name" required id="name">
+                        <input type="text" placeholder="Enter ur Name" required id="name" name="fname">
 
                         <p class="mt-3">Email address :</p>
-                        <input type="email" placeholder="xyz@mail.com" required id="mail">
+                        <input type="email" placeholder="xyz@mail.com" required id="mail" name="fname1">
 
                         <p class="mt-3">
                             Password :
                         </p>
-                        <input type="password" placeholder="*******" required id="pass">
+                        <input type="password" placeholder="*******" required id="pass" name="fname2">
                         <button type="button" class="btn btn-light mt-3 submit-btn" onclick="sub()">Submit</button>
+                        <button type="button" class="btn btn-light mt-3 submit-btn" onclick="login()">Log In</button>
                     </form>
                 </div>
                 <div class="col-12 mt-5">
@@ -69,16 +70,14 @@
                             <form action="">
                                 <p>ENTER UR NAME:</p>
                                 <div class="w-100"></div>
-                                <input type="text" placeholder="Enter ur name" value="" class="rounded" id="name1">
+                                <input type="text" placeholder="Enter ur name" value="" class="rounded" id="name1" required>
                                 <p class="mt-3">ENTER UR MAIL:</p>
                                 <div class="w-100"></div>
-                                <input type="text" placeholder="@mail.com" class="rounded" id="mail1">
+                                <input type="text" placeholder="@mail.com" class="rounded" id="mail1" required>
                                 <p class="mt-3">PASSOWRD :</p>
                                 <div class="w-100"></div>
-                                <input type="password" placeholder="******" class="rounded" id="pass1">
-                                <div class="mt-5 mx-auto rounded btni" onclick="msg()">
-                                    SUBMIT
-                                </div>
+                                <input type="password" placeholder="******" class="rounded" id="pass1" required>
+                                <input type="button" class="mt-5 mx-auto rounded btni" value="SUBMIT" onclick="msg()">
                             </form>
                         </div>
                     </div>
@@ -108,6 +107,29 @@
                         <h3>Successfully updated ur profile</h3>
                     </div>
                 </div>
+
+                <!-- login part-->
+                <div class="col-12 position-fixed logmain">
+                    <div class="innerform rounded">
+                        <div class="header">
+                            <p class="float-left">WELCOME</p>
+                            <span class="float-right" onclick="popdown()"><i class="fas fa-times"></i></span>
+                        </div>
+                        <div class="formMain">
+                            <form action="">
+                                <p>ENTER UR NAME:</p>
+                                <div class="w-100"></div>
+                                <input type="text" placeholder="Enter ur name" value="" class="rounded" id="logname" required>
+                                <p class="mt-3">PASSOWRD :</p>
+                                <div class="w-100"></div>
+                                <input type="password" placeholder="******" class="rounded" id="logpass" required>
+                                <button type="button"
+                                class="mt-5 mx-auto rounded btni" onclick="logininner()">LOG IN</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
         </div>
