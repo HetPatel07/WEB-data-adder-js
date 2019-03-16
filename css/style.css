@@ -1,11 +1,28 @@
 body {
     font-family: 'Varela Round', sans-serif;
     background-color: #f9f9f9;
+    overflow-x: hidden;
+}
+
+.mainLogin {
+    display: block;
+}
+
+.table {
+    display: none;
+}
+
+.userTable {
+    display: none;
 }
 
 h2 {
     font-size: 30px;
     font-weight: 700;
+}
+
+form {
+    clear: both;
 }
 
 form p {
@@ -72,6 +89,30 @@ td > .submit-btn:hover {
     background-color: rgba(1, 1, 1, .7);
 }
 
+.adminMain {
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    width: 100%;
+    background-color: rgba(1, 1, 1, .7);
+}
+
+.adminForm {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 35%;
+    transform: translateY(-50%);
+    margin: auto;
+    width: 500px;
+    opacity: 0;
+    background-color: #fff;
+    padding: 50px;
+}
+
 .logmain {
     top: 0;
     left: 0;
@@ -91,13 +132,14 @@ td > .submit-btn:hover {
     background-color: rgba(1, 1, 1, .7);
 }
 
+
 .main2 {
     z-index: -1;
     opacity: 1;
     top: 0;
     left: 0;
+    height: 100%;
     width: 100%;
-    background-color: rgba(1, 1, 1, .7);
 }
 
 .form {
@@ -200,8 +242,28 @@ form {
     border-radius: 20px;
     position: absolute;
     bottom: 0;
-    right: -50%;
+/*    right: -50%;*/
     z-index: 1;
+/*    animation-name: success;*/
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    opacity: 0;
+}
+
+@keyframes success{
+    0%{
+        opacity: 0;
+        right: -50%;
+        background-color: #2BBBAD;
+    }
+    50%{
+        opacity: 1;
+        right: 0%;
+    }
+    100%{
+        opacity: 0;
+        right: -100%;
+    }
 }
 
 .mainContent h3 {
